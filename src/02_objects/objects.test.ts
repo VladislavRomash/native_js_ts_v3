@@ -1,16 +1,11 @@
 import {addGovernmentBuildings, addHousesToCity, City} from './objects';
 
-
-let city: City
-
-beforeEach(() => {
-    city = {
-        title: 'Minsk',
-        houses: [],
-        governmentBuildings: [],
-        citizenNumbers: 100200,
-    }
-})
+let city: City = {
+    title: 'Minsk',
+    houses: [],
+    governmentBuildings: [],
+    citizenNumbers: 100200,
+}
 
 test('city should 3 houses', () => {
     const result = addHousesToCity(city)

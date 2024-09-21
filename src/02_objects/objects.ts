@@ -1,18 +1,18 @@
 import React from 'react';
 
-type Technologies = {
+export type Technologies = {
     id: number
     title: string
 }
-type CityObj = {
+export type CityObj = {
     title: string;
     country: string;
 }
-type AddressObj = {
+export type AddressObj = {
     street: string;
     city: CityObj;
 }
-type Student = {
+export type Student = {
     id: number
     name: string
     age: number
@@ -40,20 +40,20 @@ export const student: Student = {
     ]
 }
 
-type GovernmentBuildings = {
+export type GovernmentBuildings = {
     type: string
     budget: number
     staffCount: number
     address: Address
 }
-type Street = {
+export type Street = {
     title: string
 }
-type Address = {
+export type Address = {
     number: number
     street: Street
 }
-type House = {
+export type House = {
     builtAt: number
     repaired: boolean
     address: Address
