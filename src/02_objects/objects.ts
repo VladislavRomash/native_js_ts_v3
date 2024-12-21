@@ -1,25 +1,5 @@
 import React from 'react';
-
-export type Technologies = {
-    id: number
-    title: string
-}
-export type CityObj = {
-    title: string;
-    country: string;
-}
-export type AddressObj = {
-    street: string;
-    city: CityObj;
-}
-export type Student = {
-    id: number
-    name: string
-    age: number
-    isActive: boolean
-    address: AddressObj
-    technologies: Technologies[]
-}
+import {City, Student} from '../types';
 
 export const student: Student = {
     id: 1,
@@ -38,31 +18,6 @@ export const student: Student = {
         {id: 2, title: 'React'},
         {id: 3, title: 'TS'},
     ]
-}
-
-export type GovernmentBuildings = {
-    type: string
-    budget: number
-    staffCount: number
-    address: Address
-}
-export type Street = {
-    title: string
-}
-export type Address = {
-    number: number
-    street: Street
-}
-export type House = {
-    builtAt: number
-    repaired: boolean
-    address: Address
-}
-export type City = {
-    title: string
-    houses: House[]
-    governmentBuildings: GovernmentBuildings[]
-    citizenNumbers: number
 }
 
 export const addHousesToCity = (obj: City) => {

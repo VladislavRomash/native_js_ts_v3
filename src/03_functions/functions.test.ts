@@ -6,7 +6,8 @@ import {
     repairHouse,
     toChangeStaff
 } from './functions';
-import {City, student} from '../02_objects/objects';
+import {student} from '../02_objects/objects';
+import {City} from '../types';
 
 
 let city: City = {

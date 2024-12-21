@@ -1,4 +1,5 @@
-import {addGovernmentBuildings, addHousesToCity, City} from './objects';
+import {addGovernmentBuildings, addHousesToCity} from './objects';
+import {City} from '../types';
 
 let city: City = {
     title: 'Minsk',

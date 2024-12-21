@@ -1,5 +1,5 @@
 import React from 'react';
-import {City, Student, Technologies} from '../02_objects/objects';
+import {City, Student, Technologies} from '../types';
 
 export const addNewSkill = (student: Student, skill: Technologies) => ({
     ...student,
