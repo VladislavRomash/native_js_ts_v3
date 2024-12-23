@@ -1,24 +1,5 @@
-import React from 'react';
-import {City, Student} from '../types';
+import {City} from '../data/types';
 
-export const student: Student = {
-    id: 1,
-    name: 'Max',
-    age: 25,
-    isActive: true,
-    address: {
-        street: 'Lenina',
-        city: {
-            title: 'Minsk',
-            country: 'Belarus',
-        }
-    },
-    technologies: [
-        {id: 1, title: 'HTML'},
-        {id: 2, title: 'React'},
-        {id: 3, title: 'TS'},
-    ]
-}
 
 export const addHousesToCity = (obj: City) => {
     return {

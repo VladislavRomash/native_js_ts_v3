@@ -44,7 +44,6 @@ export type Student = {
     technologies: Technologies[]
 }
 
-
 export type Course = {
     title: string
     price: number
@@ -54,4 +53,15 @@ export type Task = {
     id: number
     title: string
     isDone: boolean
+}
+
+export type Man = {
+    name: string
+    age: number
+}
+
+export type Developers = {
+    stack: string[],
+    firstName: string
+    lastName: string
 }

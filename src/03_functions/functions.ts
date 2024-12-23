@@ -1,5 +1,4 @@
-import React from 'react';
-import {City, Student, Technologies} from '../types';
+import {City, Student, Technologies} from '../data/types';
 
 export const addNewSkill = (student: Student, skill: Technologies) => ({
     ...student,
@@ -8,9 +7,7 @@ export const addNewSkill = (student: Student, skill: Technologies) => ({
 
 export const changeActivity = (student: Student, activity: boolean) => ({...student, isActive: activity})
 
-export const checkLiveStudent = (student: Student, city: string) => {
-    return student.address.city.title === city
-}
+export const checkLiveStudent = (student: Student, city: string) => student.address.city.title === city
 
 export const changeBudget = (city: City, budget: number, building: string) => ({
     ...city,
@@ -35,6 +32,4 @@ export const toChangeStaff = (city: City, count: number, organization: string) =
         : m)
 })
 
-export const createMessage = (city: City) => {
-    return `Hello ${city.title} citizens. Us ${city.citizenNumbers}`
-}
+export const createMessage = (city: City) => `Hello ${city.title} citizens. Us ${city.citizenNumbers}`

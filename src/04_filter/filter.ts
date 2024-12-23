@@ -1,4 +1,4 @@
-import {City, Course, GovernmentBuildings, Task} from '../types';
+import {City, Course, GovernmentBuildings, Task} from '../data/types';
 
 export const olderFiftyFn = (arr: number[], condition: number): number[] => {
     let newArr = []

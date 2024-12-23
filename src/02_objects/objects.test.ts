@@ -1,12 +1,5 @@
 import {addGovernmentBuildings, addHousesToCity} from './objects';
-import {City} from '../types';
-
-let city: City = {
-    title: 'Minsk',
-    houses: [],
-    governmentBuildings: [],
-    citizenNumbers: 100200,
-}
+import {city} from '../data/data';
 
 test('city should 3 houses', () => {
     const result = addHousesToCity(city)
