@@ -65,3 +65,8 @@ export type Developers = {
     firstName: string
     lastName: string
 }
+
+export type User = {
+    id: string
+    name: string
+}

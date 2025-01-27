@@ -1,4 +1,4 @@
-import {City, Man, Student, Task} from './types';
+import {City, Man, Student, Task, User} from './types';
 
 export let city: City = {
     title: 'Minsk',
@@ -80,3 +80,9 @@ export const student: Student = {
         {id: 3, title: 'TS'},
     ]
 }
+
+export const user: User[] = [
+    {id: crypto.randomUUID(), name: 'Ann'},
+    {id: crypto.randomUUID(), name: 'Nick'},
+    {id: crypto.randomUUID(), name: 'Max'},
+]
