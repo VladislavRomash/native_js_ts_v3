@@ -2,11 +2,14 @@ import React, {useState} from 'react';
 import './App.css';
 import {UserComponent} from './06_callback/UserComponent';
 import {User} from './data/types';
-import {user} from './data/data';
 
 function App() {
 
-    const [data, setData] = useState<User[]>(user)
+    const [data, setData] = useState<User[]>([
+        {id: crypto.randomUUID(), name: 'Ann'},
+        {id: crypto.randomUUID(), name: 'Nick'},
+        {id: crypto.randomUUID(), name: 'Max'},
+    ])
     const [currentValueInput, setCurrentValueInput] = useState<string>('')
 
     const addUser = () => {
